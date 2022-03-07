@@ -1,0 +1,14 @@
+<html>
+
+<form>
+<input type="text" id="text" value="">
+<button id='copy'> Copy </button>
+</form>
+<script> 
+var text = document.getElementByID('text');
+var copy = document.getElementByID('copy');
+copy.addEventListener('click', function(){
+	navigator.clipboard.writeText(text.value);
+})
+</script>
+</html>

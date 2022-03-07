@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste</title>
+</head>
+<body>
+    <input type="text" name="" value="" id="Past">
+    <button id="pastbutton">Past Button</button>
+
+<script>
+  var Past = document.getElementById('Past');
+  var pastbutton = document.getElementById('pastbutton');
+  pastbutton.addEventListener('click', function(){
+    Past.value ='';
+      navigator.clipboard.readText()
+      .then(function(text){
+        Past.value = text;
+      })
+  })
+</script>
+
+</body>
+</html>

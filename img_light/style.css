@@ -1,0 +1,22 @@
+.title{
+ text-align: center;
+}
+img{
+    margin-right: 60px;
+}
+.button{
+    text-align: center;
+}
+button{
+    border: 20px solid #000;
+    border-radius: 5px;
+    
+}
+#on{
+    background-color: teal;
+    border-radius: 5px;
+}
+#off{
+    background-color: tomato;
+    border-radius: 5px;
+}

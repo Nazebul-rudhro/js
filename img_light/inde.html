@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h2>Light Off </h2>
+    </div>
+    <img id="light1" src="bulboff.gif" alt="img" width="130" height="200">
+    <img id="light2" src="bulboff.gif" alt="img" width="130" height="200">
+    <img id="light3" src="bulboff.gif" alt="img" width="130" height="200">
+    <img id="light4" src="bulboff.gif" alt="img" width="130" height="200">
+    <img id="light5" src="bulboff.gif" alt="img" width="130" height="200">
+    <br>
+    <br>
+    <div class="button">
+        <button id="on" onclick="lightBtn(1)">ON</button>
+        <button id="off" onclick="lightBtn(0)">OFF</button>
+    </div>
+    <script>
+        function lightBtn(match){
+            var pic;
+            for(var i=1; i<=5; i++){
+                if(match==0){
+                    pic="bulboff.gif";
+                }else{
+                    pic="pic_bulbon.gif";
+                }
+
+                var light = document.getElementById('light'+[i]);
+                light.src=pic;
+            }
+        }
+    </script>
+</body>
+</html>
