@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        h1{
+            margin-top: 12rem;
+            text-align: center;
+            color: #fff;
+        }
+        h1::after{
+            border-right: 2px solid #fff;
+            content: '';
+            left: 5px;
+            position: relative;
+            animation:  blink 0.6s infinite;
+        }
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="effcet"></h1>
+    <script>
+        var effcet = document.getElementById('effcet');
+        var text = "Learn with Nazebul";
+        var index = 0;
+        setInterval(fun, 1000);
+        function fun(){
+            effcet.innerHTML=text.slice(0, index++);
+            if(index>text.length){
+                index = 0;
+            }
+        }
+    </script>
+</body>
+</html>
