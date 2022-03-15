@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="" value="" id="input">
+         <button id="addbtn"> Add </button>
+       </div>
+    
+       <ol id="orderitem"> 
+           <li>Sakib</li>
+           <li>Rakib</li>
+       </ol>
+    <script>
+        var add = document.getElementById('addbtn');
+        add.addEventListener('click', function(){
+            var input = document.getElementById('input').value;
+            var orderitem = document.getElementById('orderitem');
+            var text = document.createTextNode(input);
+            var newitem = document.createElement("li");
+            newitem.appendChild(text);
+            orderitem.appendChild(newitem);
+            
+        });
+        </script>
+
+</body>
+</html>

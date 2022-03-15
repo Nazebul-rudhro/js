@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .morter{
+            background-color: green;
+            width: 40%;
+            margin: 0 auto;
+            opacity: 0;
+        }
+        .morter.after{
+            opacity: 1;
+        }
+        p{
+            padding: 10px;
+           text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="morter" id="pera">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore maiores temporibus officia doloribus, rerum dicta magni qui minima reiciendis iusto incidunt fuga. Hic recusandae iure numquam tempore architecto corporis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quae cum eos sed excepturi totam in ipsam natus, harum facilis, quibusdam placeat consequuntur! Recusandae, dolor. Tenetur praesentium quo maxime voluptate!
+
+        </p>
+        <button id="closeBtn"> Close</button>
+    </div>
+    <button id="open">
+        Open 
+    </button>
+    <script>
+        var pera = document.getElementById("pera");
+        var openbtn = document.getElementById('open');
+        var closeBtn = document.getElementById('closeBtn');
+        openbtn.addEventListener('click', function(){
+            pera.classList.add('after');
+        });
+        closeBtn.addEventListener('click', function(){
+            pera.classList.remove('after');
+        });
+    </script>
+</body>
+</html>
