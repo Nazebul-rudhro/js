@@ -1,0 +1,43 @@
+.navbar{
+    text-align: center;
+    padding: 15px 0;
+    background-color: blueviolet;
+}
+.container a{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.icon{
+    font-size: 2.7rem;
+    color: #fff;
+    display: none;
+}
+
+/* media query */
+@media only screen and (max-width: 800px) {
+    .icon{
+        display: block;
+        margin-left: 700px;
+    }
+    .container a{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin: auto 0;
+        padding: 10px;
+        display: none;
+        /* text-decoration: none; */
+        
+    }
+    .container a:hover{
+        background-color: green;
+    }
+    .open a{
+        
+        display: block;
+    }
+    
+  }

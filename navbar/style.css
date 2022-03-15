@@ -1,0 +1,36 @@
+.nav{
+    background-color: blueviolet;
+    padding: 10px 0;
+}
+.fa-solid{
+    font-size: 2.4rem;
+}
+.icon{
+    margin-right: 40px;
+}
+.nav-manus{
+    background-color: teal;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    transition: 9s;
+
+}
+.nav_close{
+    position: fixed;
+    width:0 ;
+    display: none;
+    transition: 5s;
+   
+}
+.nav-manus a{
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-items: stretch;
+    margin-top: 65px;
+    color: #000;
+}
+.nav-manu{
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/060db8787a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="icon" dir="rtl"><i class="fa-solid fa-bars" id="toggle_btn"></i></div>
+    </div>
+    <div class="nav-manus" id="slid_bar">
+        <div class="nav-manu">
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">Notification</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="https://w3codevs.com/"> click here </a>
+        </div>
+    </div>
+ 
+
+    <script>
+        var toggle_btn = document.getElementById('toggle_btn');
+        var slid_bar = document.getElementById('slid_bar');
+        toggle_btn.addEventListener('click', function(){
+            slid_bar.classList.toggle('nav-manus');
+            slid_bar.classList.toggle('nav_close');
+        });
+    </script>
+</body>
+</html>

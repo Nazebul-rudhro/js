@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/060db8787a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <i class="fa-solid fa-bars icon" id="toggle_btn"  id="btn"></i>
+        <div class="container" id="slidbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Notification</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById('toggle_btn');
+        var slidbar = document.getElementById('slidbar');
+        btn.addEventListener('click', function(){
+            // slidbar.classList.toggle("container");
+            slidbar.classList.toggle("open");
+        });
+    </script>
+    
+</body>
+</html>
